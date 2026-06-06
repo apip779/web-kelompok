@@ -5,59 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tips</title>
     <link rel="stylesheet" href="src/output.css">
+    <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .faq-item.open .faq-arrow {
+      transform: rotate(90deg);
+    }
+
+    .faq-item .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .faq-item.open .faq-content {
+      max-height: 500px;
+    }
+  </style>
 </head>
+
 <body>
-        <nav class=" bg-[#07164A] mx auto flex items-center justify-between px-6 py-6">
-            <!-- logo gambar -->
-            <a href="#">
-                <img 
-                src="gambar/logo_nama.png" 
-                alt="Badoystudio"
-                class=" h-10 w-auto object-contain ml-20 ">
-            </a>
-            <div class="flex items-center gap-3">
-                <div class="flex flex-col gap-1"></div>
-            </div>
-            <div class="hidden md:flex gap-10 text-1xl font-medium px-30">
-                <ul class="flex gap-10 list-none text-white text-lg font-semibold">
-
-                <a href="#" class=" relative pb-2 border-b-2 border-transparent hover:border-white transition duration-300">Beranda</a>
-                
-                <li class="relative group">
-
-
-                <a href="#" class="pb-5 border-b-2 border-transparent hover:border-white transition duration-300 ">Layanan <span>▾</span></a>
-
-                <div class="absolute left-0 top-full mt-2 hidden group-hover:block bg-white text-black w-100 shadow-lg">
-
-                    <div class="grid grid-cols-2">
-                        <div class="p-4 border-r">
-                            <p class="py-2 hover:text-blue-500"> Jasa Pembuatan Website</p>
-                            <p class="py-2">Jasa SEO</p>
-                            <p class="py-2">Jasa Maintenance Website</p>
-                            <p class="py-2">Jasa Redesign Website</p>
-                        </div>
-                        <div class="p-4">
-                            <p class="py-2">test</p>
-                            <p class="py-2">test</p>
-                            <p class="py-2">test</p>
-                            <p class="py-2">test</p>
-
-                        </div>
-                    </div>
-
-
-                    </div>
-            
+  <nav class="w-full mx-auto flex items-center justify-between px-6 py-5 bg-linear-to-r from-[#011638] from-80% to-[#002c2f] min-h-[12vh] fixed text-white">
+    <div class="max-w-7xl flex justify-between px-0 md:px-14 items-center mx-auto w-full">
+      <div class="flex items-center gap-2">
+        <img src="gambar/logo_nama.png" alt="" class="h-8 w-auto"/>
+      </div>
+      <ul class="hidden md:flex items-center gap-14 text-sm font-medium mr-20">
+        <li>
+          <a href="index.html" class="">Beranda</a>
+        </li>
+        <li class="relative">
+          <a href="#" id="layanan-trigger"
+            class="hover:text-[#ec265a] transition flex items-center gap-1 border-b-2 border-white">Layanan ▾</a>
+          <!-- Dropdown -->
+          <ul id="layanan-dropdown"
+            class="absolute left-0 top-full mt-2 w-64 bg-white text-gray-800 shadow-xl rounded-sm hidden z-50">
+            <li class="border-b border-gray-100">
+              <a href="sekolah.html"
+                class="flex items-center justify-between px-5 py-4 text-sm hover:bg-gray-50 transition">
+                Jasa Pembuatan Website Sekolah <span class="text-gray-400">›</span>
+              </a>
             </li>
-
-                <a href="#" class="relative pb-2 border-b-2 border-transparent hover:border-white transition duration-300">Tips</a>
-                <li>
-                <a href="#" class="relative pb-2 border-b-2 border-transparent hover:border-white transition duration-300">Ebook & Ecourse <span>▾</span></a></li>
-                </ul>
-            </div>
-        
-        </nav>
+            <li class="border-b border-gray-100">
+              <a href="#" class="flex items-center justify-between px-5 py-4 text-sm hover:bg-gray-50 transition">
+                Jasa SEO <span class="text-gray-400">›</span>
+              </a>
+            </li>
+            <li class="border-b border-gray-100">
+              <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">
+                Jasa Maintenance Website
+              </a>
+            </li>
+            <li class="border-b border-gray-100">
+              <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">
+                Jasa Redesign Website
+              </a>
+            </li>
+            <li class="border-b border-gray-100">
+              <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">
+                Jasa Backup WordPress
+              </a>
+            </li>
+            <li class="border-b border-gray-100">
+              <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">
+                Jasa Pasang SSL
+              </a>
+            </li>
+            <li class="border-b border-gray-100">
+              <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">
+                Jasa Hapus Malware WordPress
+              </a>
+            </li>
+            <li class="border-b border-gray-100">
+              <a href="#" class="flex items-center justify-between px-5 py-4 text-sm hover:bg-gray-50 transition">
+                Jasa Artikel <span class="text-gray-400">›</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">
+                Jasa Install Elementor Pro
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="index3.html" class="hover:text-[#ec265a] transition">Tips</a>
+        </li>
+          <li class="relative">
+            <a href="#" class="hover:text-[#ec265a] transition" id="ebook-trigger">Ebook & Ecourse ▾</a>
+            <ul id="ebook-dropdown"
+              class="absolute left-0 top-full mt-2 w-64 bg-white text-gray-800 shadow-xl rounded-sm hidden z-50">
+              <li class="border-b border-gray-100">
+                <a href="index4.html"
+                  class="flex items-center justify-between px-5 py-4 text-sm hover:bg-gray-50 transition">
+                  Blogging & seo mastery <span class="text-gray-400">›</span>
+                </a>
+              </li>
+              <li class="border-b border-gray-100">
+                <a href="#" class="flex items-center justify-between px-5 py-4 text-sm hover:bg-gray-50 transition">
+                  Kelas Mastering Web <span class="text-gray-400">›</span>
+                </a>
+              </li>
+              <li class="border-b border-gray-100">
+                <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">Paket Lengkap Ebook Belajar Studio Android</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        </li>
+      </ul>
+    </div>
+    <button class="md:hidden text-2xl">☰</button>
+  </nav>
         <!-- CATEGORY -->
         <div class="bg-gray-100 border-b border-gray-200 px-16 py-8">
             <div class="max-w-7xl mx-auto">
@@ -146,6 +207,12 @@
                          “Establishing a Database Connection” atau halaman putih kosong, Anda tidak sendirian. Banyak pemilik situs mengalami hal serupa, dan itu …</p>
                 </div>
             </article>
+            <div class="flex mb-8">
+              <a href="#" 
+              class="bg-[#f5a623] text-white font-bold uppercase 
+              text-small px-2 py-2 rounded-lg inline-flex hover:bg-[#e09620] transition-all duration-300 shadow-lg">OLDER POST</a>
+            </div>
+            
         </main>
         <!-- Search kanan -->
         <aside class="w-72 shrink-0">
@@ -428,12 +495,28 @@
         </p>
       </div>
   </footer>
-    
+  <script>
+    document.querySelectorAll(".faq-toggle").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        btn.parentElement.classList.toggle("open");
+      });
+      });
 
-        
+      document.getElementById("layanan-trigger").addEventListener("mouseenter", () => {
+        document.getElementById("layanan-dropdown").classList.remove("hidden");
+      });
 
+      document.addEventListener("click", () => {
+        document.getElementById("layanan-dropdown").classList.add("hidden");
+      });
 
-    
-    
+      document.getElementById("ebook-trigger").addEventListener("mouseenter", () => {
+        document.getElementById("ebook-dropdown").classList.remove("hidden");
+      });
+
+      document.addEventListener("click", () => {
+        document.getElementById("ebook-dropdown").classList.add("hidden");
+      });
+  </script>
 </body>
 </html>

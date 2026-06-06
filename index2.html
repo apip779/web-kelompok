@@ -115,10 +115,29 @@
           </ul>
         </li>
         <li>
-          <a href="#" class="hover:text-[#ec265a] transition">Tips</a>
+          <a href="index3.html" class="hover:text-[#ec265a] transition">Tips</a>
         </li>
-        <li>
-          <a href="#" class="hover:text-[#ec265a] transition">Ebook & Ecourse ▾</a>
+          <li class="relative">
+            <a href="#" class="hover:text-[#ec265a] transition" id="ebook-trigger">Ebook & Ecourse ▾</a>
+            <ul id="ebook-dropdown"
+              class="absolute left-0 top-full mt-2 w-64 bg-white text-gray-800 shadow-xl rounded-sm hidden z-50">
+              <li class="border-b border-gray-100">
+                <a href="index4.html"
+                  class="flex items-center justify-between px-5 py-4 text-sm hover:bg-gray-50 transition">
+                  Blogging & seo mastery <span class="text-gray-400">›</span>
+                </a>
+              </li>
+              <li class="border-b border-gray-100">
+                <a href="#" class="flex items-center justify-between px-5 py-4 text-sm hover:bg-gray-50 transition">
+                  Kelas Mastering Web <span class="text-gray-400">›</span>
+                </a>
+              </li>
+              <li class="border-b border-gray-100">
+                <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">Paket Lengkap Ebook Belajar Studio Android</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
         </li>
       </ul>
     </div>
@@ -1005,15 +1024,23 @@
       btn.addEventListener("click", () => {
         btn.parentElement.classList.toggle("open");
       });
-    });
+      });
 
-    document.getElementById("layanan-trigger").addEventListener("mouseenter", () => {
-      document.getElementById("layanan-dropdown").classList.remove("hidden");
-    });
+      document.getElementById("layanan-trigger").addEventListener("mouseenter", () => {
+        document.getElementById("layanan-dropdown").classList.remove("hidden");
+      });
 
-    document.addEventListener("click", () => {
-      document.getElementById("layanan-dropdown").classList.add("hidden");
-    });
+      document.addEventListener("click", () => {
+        document.getElementById("layanan-dropdown").classList.add("hidden");
+      });
+
+      document.getElementById("ebook-trigger").addEventListener("mouseenter", () => {
+        document.getElementById("ebook-dropdown").classList.remove("hidden");
+      });
+
+      document.addEventListener("click", () => {
+        document.getElementById("ebook-dropdown").classList.add("hidden");
+      });
   </script>
 </body>
 
