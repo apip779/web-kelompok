@@ -1,0 +1,1020 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jasa Pembuatan Website Sekolah - Badoystudio</title>
+  <link rel="stylesheet" href="src/output.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .faq-item .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+
+    .faq-item.open .faq-content {
+      max-height: 600px;
+    }
+
+    .faq-item.open .faq-arrow {
+      transform: rotate(90deg);
+    }
+
+    .hero-mockup-card {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    }
+
+    .check-icon {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #292c6d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 w-full">
+
+  <!-- ========== NAVBAR ========== -->
+  <nav
+    class="w-full mx-auto flex items-center justify-between px-6 py-5 bg-linear-to-r from-[#011638] from-80% to-[#002c2f] min-h-[12vh] fixed text-white">
+    <div class="max-w-7xl flex justify-between px-0 md:px-14 items-center mx-auto w-full">
+      <div class="flex items-center gap-2">
+        <img src="gambar/logo_nama.png" alt="" class="h-8 w-auto" />
+      </div>
+      <ul class="hidden md:flex items-center gap-14 text-sm font-medium mr-20">
+        <li>
+          <a href="index.html" class="">Beranda</a>
+        </li>
+        <li class="relative">
+          <a href="#" id="layanan-trigger"
+            class="hover:text-[#ec265a] transition flex items-center gap-1 border-b-2 border-white">Layanan ▾</a>
+          <!-- Dropdown -->
+          <ul id="layanan-dropdown"
+            class="absolute left-0 top-full mt-2 w-64 bg-white text-gray-800 shadow-xl rounded-sm hidden z-50">
+            <li class="border-b border-gray-100">
+              <a href="sekolah.html"
+                class="flex items-center justify-between px-5 py-4 text-sm hover:bg-gray-50 transition">
+                Jasa Pembuatan Website Sekolah <span class="text-gray-400">›</span>
+              </a>
+            </li>
+            <li class="border-b border-gray-100">
+              <a href="#" class="flex items-center justify-between px-5 py-4 text-sm hover:bg-gray-50 transition">
+                Jasa SEO <span class="text-gray-400">›</span>
+              </a>
+            </li>
+            <li class="border-b border-gray-100">
+              <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">
+                Jasa Maintenance Website
+              </a>
+            </li>
+            <li class="border-b border-gray-100">
+              <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">
+                Jasa Redesign Website
+              </a>
+            </li>
+            <li class="border-b border-gray-100">
+              <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">
+                Jasa Backup WordPress
+              </a>
+            </li>
+            <li class="border-b border-gray-100">
+              <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">
+                Jasa Pasang SSL
+              </a>
+            </li>
+            <li class="border-b border-gray-100">
+              <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">
+                Jasa Hapus Malware WordPress
+              </a>
+            </li>
+            <li class="border-b border-gray-100">
+              <a href="#" class="flex items-center justify-between px-5 py-4 text-sm hover:bg-gray-50 transition">
+                Jasa Artikel <span class="text-gray-400">›</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">
+                Jasa Install Elementor Pro
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="hover:text-[#ec265a] transition">Tips</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-[#ec265a] transition">Ebook & Ecourse ▾</a>
+        </li>
+      </ul>
+    </div>
+    <button class="md:hidden text-2xl">☰</button>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <header class="bg-[#0e3c96] text-white pt-20 min-h-[90vh]">
+    <div class="max-w-4xl mx-auto px-6 py-24 text-center">
+      <h1 class="text-3xl md:text-4xl font-bold leading-tight">
+        Jasa Pembuatan Website Sekolah
+      </h1>
+      <p class="mt-6  text-base md:text-lg leading-relaxed mx-auto">
+        Badoystudio menyediakan layanan pembuatan website sekolah ataupun kampus secara
+        profesional untuk berbagai kebutuhan lembaga pendidikan.
+      </p>
+      <a href="#"
+        class="inline-flex items-center gap-2 mt-10 bg-yellow-400 hover:bg-yellow-300 transition text-[#292c6d] font-bold text-sm px-10 py-4 rounded-full shadow-lg">
+        <span>☎</span> Pesan Sekarang
+      </a>
+    </div>
+
+    <!-- Mockup images fan -->
+    <div class="max-w-5xl mx-auto px-6 pb-0 flex items-end justify-center gap-4 overflow-hidden">
+      <img src="gambar/sekolah/hero.png" alt="" class="w-full" />
+    </div>
+  </header>
+
+  <!-- ========== PAIN POINTS ========== -->
+  <section class="max-w-6xl mx-auto px-6 md:px-14 py-24">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+      <!-- Left: person placeholder -->
+      <div class="flex justify-center">
+        <img src="gambar/sekolah/man1.png" alt="" class="max-w-96" />
+      </div>
+
+      <!-- Right: pain points -->
+      <div>
+        <h2 class="text-2xl md:text-3xl font-semibold text-[#292c6d] leading-snug mb-8">
+          Mungkinkah Ini Yang Anda<br />Rasakan:
+        </h2>
+        <ul class="space-y-4">
+          <li class="flex gap-3">
+            <div class="check-icon"><svg class="w-3 h-3" fill="white" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414L8.414 15 3.293 9.879a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg></div>
+            <span class="text-gray-700 text-sm leading-relaxed">Bingung bagaimana cara membuat website sekolah?</span>
+          </li>
+          <li class="flex gap-3">
+            <div class="check-icon"><svg class="w-3 h-3" fill="white" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414L8.414 15 3.293 9.879a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg></div>
+            <span class="text-gray-700 text-sm leading-relaxed">Kesulitan dalam mendesain dan menyusun copywriting untuk
+              websitemu?</span>
+          </li>
+          <li class="flex gap-3">
+            <div class="check-icon"><svg class="w-3 h-3" fill="white" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414L8.414 15 3.293 9.879a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg></div>
+            <span class="text-gray-700 text-sm leading-relaxed">Pernah nyoba buat website sendiri tapi hasilnya tidak
+              profesional?</span>
+          </li>
+          <li class="flex gap-3">
+            <div class="check-icon"><svg class="w-3 h-3" fill="white" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414L8.414 15 3.293 9.879a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg></div>
+            <span class="text-gray-700 text-sm leading-relaxed">Belum punya tim khusus dalam hal pembuatan
+              website?</span>
+          </li>
+          <li class="flex gap-3">
+            <div class="check-icon"><svg class="w-3 h-3" fill="white" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414L8.414 15 3.293 9.879a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg></div>
+            <span class="text-gray-700 text-sm leading-relaxed">Ingin memiliki website tanpa harus repot mengurusi hal
+              teknis?</span>
+          </li>
+        </ul>
+        <p class="mt-8 text-gray-600 text-sm leading-relaxed">
+          Kalau kamu merasakan salah satu hal diatas, maka kami ucapkan selamat.
+          Karena kami sudah menyiapkan solusi untuk Anda.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CREDIBILITY / STATS ========== -->
+  <section class="max-w-6xl mx-auto px-6 md:px-14 py-10">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+      <!-- Left: text + stats -->
+      <div>
+        <h2 class="text-2xl md:text-3xl font-semibold text-[#292c6d] leading-snug mb-6">
+          Tahukan Anda, Dengan Website<br />Profesional Dapat Berpotensi<br />
+          Meningkatkan Kredibilitas Sekolah<br />Anda?
+        </h2>
+        <p class="text-gray-600 text-sm leading-relaxed mb-8">
+          Coba Anda perhatikan bagaimana sekolah-sekolah yang populer saat ini menjalankan
+          strategi marketing mereka! Tentu Anda akan menemukan bahwa mereka semuanya memiliki
+          <a href="#" class="text-blue-500 hover:underline">website</a> profesional.
+        </p>
+
+        <p class="text-[#292c6d] font-bold mb-4">Dan Faktanya..</p>
+        <ul class="space-y-4">
+          <li class="flex gap-3">
+            <div class="check-icon"><svg class="w-3 h-3" fill="white" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414L8.414 15 3.293 9.879a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg></div>
+            <span class="text-gray-700 text-sm leading-relaxed">57% pengguna internet tidak akan merekomendasikan sebuah
+              brand apabila tampilan websitenya tidak menarik</span>
+          </li>
+          <li class="flex gap-3">
+            <div class="check-icon"><svg class="w-3 h-3" fill="white" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414L8.414 15 3.293 9.879a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg></div>
+            <span class="text-gray-700 text-sm leading-relaxed">88% konsumen memutuskan untuk melakukan pembelian atau
+              menggunakan layanan jasa setelah melihat websitenya.</span>
+          </li>
+          <li class="flex gap-3">
+            <div class="check-icon"><svg class="w-3 h-3" fill="white" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414L8.414 15 3.293 9.879a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg></div>
+            <span class="text-gray-700 text-sm leading-relaxed">75% pengguna internet menilai kredibilitas sebuah
+              perusahaan berdasarkan desain situs website yang dimiliki.</span>
+          </li>
+        </ul>
+        <p class="mt-6 text-[#292c6d] font-bold text-sm">
+          Sekolah Wajib Memiliki Website untuk Promosi Sukses di Dunia Online!
+        </p>
+      </div>
+
+      <!-- Right: person placeholder -->
+      <div class="flex justify-center">
+        <img src="gambar/sekolah/man2.png" alt="" class="max-w-96">
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROBLEM SECTION ========== -->
+  <section class="max-w-6xl mx-auto px-6 md:px-14 py-24">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+      <!-- Left: stressed person placeholder -->
+      <div class="flex justify-center">
+        <img src="gambar/sekolah/man3.png" alt="" class="max-w-96">
+      </div>
+
+      <!-- Right: problem text -->
+      <div>
+        <p class="text-gray-600 font-medium mb-2">Tapi Problemnya...</p>
+        <h3 class="text-xl md:text-2xl font-semibold text-[#292c6d] mb-6">
+          Membuat Website Sekolah yang profesional tidaklah mudah!
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+          Ada banyak hal yang perlu Anda persiapkan, mulai dari konsep desain website yang menarik,
+          <a href="#" class="text-blue-500 hover:underline">copywriting</a> yang bisa mendatangkan
+          calon siswa baru, memahami troubleshooting website jika terjadi kendala, dan masih banyak
+          hal teknis lainnya.
+        </p>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+          Karena itulah kami sudah menyiapkan solusi untuk Anda. Dimana Anda tidak perlu merekrut
+          tim IT untuk membuat website, tidak perlu repot mengkonsep website yang menarik dan menjual.
+        </p>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Dan yang paling penting Anda bisa menghemat waktu dan biaya untuk bisnis Anda!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA BANNER ========== -->
+  <section class="max-w-7xl mx-auto px-6 md:px-14 py-10">
+    <div class="bg-[#0e3c96] rounded-3xl p-10 md:p-14 grid md:grid-cols-2 gap-10 items-center">
+      <!-- Left: rocket SVG -->
+      <div class="flex justify-center">
+        <img src="gambar/sekolah/rocket.png" alt="" class="max-w-96">
+      </div>
+
+      <!-- Right: text -->
+      <div class="text-white">
+        <p class="text-gray-300 text-sm mb-2">Mempersembahkan..</p>
+        <h2 class="text-2xl md:text-3xl font-bold leading-snug mb-6">
+          Jasa Buat Website<br />Sekolah by Badoystudio
+        </h2>
+        <p class="text-gray-300 text-sm leading-relaxed mb-8">
+          Kini tak perlu bingung membuat sendiri website sekolah untuk kebutuhan promosi lembaga
+          Anda. Kami akan membantu membuatkan website Anda dengan desain menarik, premium serta
+          responsive. Serahkan urusan pembuatan website Anda kepada Kami dan Anda tinggal terima jadi!
+        </p>
+        <a href="#"
+          class="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 transition text-[#292c6d] font-bold text-sm px-8 py-3 rounded-full">
+          <span>☎</span> Miliki Sekarang
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURES 3x3 ========== -->
+  <section class="max-w-6xl mx-auto px-6 md:px-14 py-20">
+    <h2 class="text-center text-3xl md:text-4xl font-bold text-[#292c6d] mb-16">
+      Apa yang akan Anda Dapatkan?
+    </h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- 1: Hosting & Domain -->
+      <div class="text-center">
+        <img src="gambar/sekolah/dapat/1.png" alt="" class="mx-auto mb-4 max-w-32 w-full">
+        <h3 class="font-bold text-[#292c6d] mb-2 text-xl">Gratis Hosting &amp; Domain</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Pembuatan website sudah termasuk domain &amp; hosting, anda hanya perlu menentukan nama
+          domain website sesuai keinginan.
+        </p>
+      </div>
+
+      <!-- 2: SSL -->
+      <div class="text-center">
+        <img src="gambar/sekolah/dapat/2.png" alt="" class="mx-auto mb-4 max-w-32 w-full">
+        <h3 class="font-bold text-[#292c6d] mb-2 text-xl">Gratis SSL Certificate</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Website Anda akan mendapatkan SSL (https) untuk meningkatkan keamanan website &amp;
+          kredibilitas website Anda.
+        </p>
+      </div>
+
+      <!-- 3: Email -->
+      <div class="text-center">
+        <img src="gambar/sekolah/dapat/3.png" alt="" class="mx-auto mb-4 max-w-32 w-full">
+        <h3 class="font-bold text-[#292c6d] mb-2 text-xl">Email Profesional</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Untuk memberikan citra baik terhadap bisnis anda dengan menggunakan nama email yang
+          dapat disesuaikan.
+        </p>
+      </div>
+
+      <!-- 4: Mobile -->
+      <div class="text-center">
+        <img src="gambar/sekolah/dapat/4.png" alt="" class="mx-auto mb-4 max-w-32 w-full">
+        <h3 class="font-bold text-[#292c6d] mb-2 text-xl">Mobile Optimized</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Website akan mudah &amp; optimal diakses di semua perangkat (desktop, tablet, hp).
+          Tampilan website jadi lebih optimal.
+        </p>
+      </div>
+
+      <!-- 5: SEO -->
+      <div class="text-center">
+        <img src="gambar/sekolah/dapat/5.png" alt="" class="mx-auto mb-4 max-w-32 w-full">
+        <h3 class="font-bold text-[#292c6d] mb-2 text-xl">SEO Friendly</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Membuat website anda mudah ditemukan di halaman Google, karena telah dirancang khusus
+          untuk ramah SEO.
+        </p>
+      </div>
+
+      <!-- 6: Desain -->
+      <div class="text-center">
+        <img src="gambar/sekolah/dapat/6.png" alt="" class="mx-auto mb-4 max-w-32 w-full">
+        <h3 class="font-bold text-[#292c6d] mb-2 text-xl">Desain Terkini</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Hasil kami telah up-to-date terhadap perkembangan teknologi yang lebih efisien dan
+          efektif saat ini.
+        </p>
+      </div>
+
+      <!-- 7: Konten & Copywriting -->
+      <div class="text-center">
+        <img src="gambar/sekolah/dapat/7.png" alt="" class="mx-auto mb-4 max-w-32 w-full">
+        <h3 class="font-bold text-[#292c6d] mb-2 text-xl">Ide Konten &amp; Copywriting</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Tim kami akan membantu menyusun konten dan copywriting website untuk memaksimalkan konversi.
+        </p>
+      </div>
+
+      <!-- 8: Akses Admin -->
+      <div class="text-center">
+        <img src="gambar/sekolah/dapat/8.png" alt="" class="mx-auto mb-4 max-w-32 w-full">
+        <h3 class="font-bold text-[#292c6d] mb-2 text-xl">Akses Admin</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Anda juga akan mendapatkan akses admin sebuah akun untuk mengakses website yang telah
+          anda pesan.
+        </p>
+      </div>
+
+      <!-- 9: Full Support -->
+      <div class="text-center">
+        <img src="gambar/sekolah/dapat/9.png" alt="" class="mx-auto mb-4 max-w-32 w-full">
+        <h3 class="font-bold text-[#292c6d] mb-2 text-xl">Full Support</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Dukungan teknis dan support untuk memastikan pengelolaan website berjalan dengan lancar
+          setelah dibuat.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== PORTFOLIO ========== -->
+  <section class="max-w-6xl mx-auto px-6 md:px-14 py-20">
+    <h2 class="text-center text-3xl md:text-4xl font-bold text-[#292c6d] mb-4">
+      Portfolio Website Sekolah
+    </h2>
+    <p class="text-center text-gray-500 text-sm mb-12 max-w-2xl mx-auto">
+      Kami telah membantu berbagai lembaga pendidikan membuat website sekolah baru maupun
+      re-design website lama ke teknologi dan desain yang lebih terkini! Berikut beberapa
+      screenshot desainnya.
+    </p>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div>
+        <img src="gambar/sekolah/desain/1.png" alt="Pilihan Desain 1" class="w-full rounded-xl shadow-md" />
+        <p class="text-center mt-3 text-sm font-medium text-gray-700">Pilihan Desain 1</p>
+      </div>
+      <div>
+        <img src="gambar/sekolah/desain/2.png" alt="Pilihan Desain 2" class="w-full rounded-xl shadow-md" />
+        <p class="text-center mt-3 text-sm font-medium text-gray-700">Pilihan Desain 2</p>
+      </div>
+      <div>
+        <img src="gambar/sekolah/desain/3.png" alt="Pilihan Desain 3" class="w-full rounded-xl shadow-md" />
+        <p class="text-center mt-3 text-sm font-medium text-gray-700">Pilihan Desain 3</p>
+      </div>
+      <div>
+        <img src="gambar/sekolah/desain/4.png" alt="Pilihan Desain 4" class="w-full rounded-xl shadow-md" />
+        <p class="text-center mt-3 text-sm font-medium text-gray-700">Pilihan Desain 4</p>
+      </div>
+      <div>
+        <img src="gambar/sekolah/desain/5.png" alt="Pilihan Desain 5" class="w-full rounded-xl shadow-md" />
+        <p class="text-center mt-3 text-sm font-medium text-gray-700">Pilihan Desain 5</p>
+      </div>
+      <div>
+        <img src="gambar/sekolah/desain/6.png" alt="Pilihan Desain 6" class="w-full rounded-xl shadow-md" />
+        <p class="text-center mt-3 text-sm font-medium text-gray-700">Pilihan Desain 6</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section class="max-w-6xl mx-auto px-6 md:px-14 py-20">
+    <h2 class="text-center text-3xl md:text-4xl font-bold text-[#292c6d] mb-4">
+      Pilihan Paket Website Sekolah
+    </h2>
+    <p class="text-center text-gray-500 text-sm mb-14 max-w-xl mx-auto">
+      Kami senang jika dapat membantu anda untuk berkomunikasi langsung mengenai solusi jasa
+      website sekolah yang anda inginkan.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-6 items-stretch">
+
+      <!-- Paket Starter -->
+      <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 flex flex-col">
+        <h3 class="text-center text-xl font-bold text-gray-800 mb-1">Paket Starter</h3>
+        <p class="text-center text-gray-400 line-through text-lg font-semibold">Rp 2,7 Jt</p>
+        <p class="text-center text-[#292c6d] text-4xl font-extrabold mb-6">Rp 1,2 Jt</p>
+        <hr class="border-gray-200 mb-6" />
+        <ul class="space-y-3 text-sm text-gray-600 flex-1">
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> Free Domain .sch.id, ponpes.id, dan
+            lembaga pendidikan lainnya</li>
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> Free Hosting 5 GB</li>
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> Free SSL</li>
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> 10 Akun Email</li>
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> Integrasi Medsos</li>
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> Integrasi Whatsapp</li>
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> Desain Premium</li>
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> 10 Halaman Website</li>
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> Estimasi 3 Hari Kerja</li>
+        </ul>
+        <a href="#"
+          class="mt-8 flex items-center justify-center gap-2 border-2 border-[#292c6d] text-[#292c6d] font-semibold text-sm py-3 rounded-full hover:bg-[#292c6d] hover:text-white transition">
+          Pesan Sekarang
+        </a>
+      </div>
+
+      <!-- Paket Pro (featured) -->
+      <div class="bg-[#0e3c96] text-white rounded-2xl shadow-2xl p-8 flex flex-col md:-mt-4 md:mb-0">
+        <h3 class="text-center text-xl font-bold text-white mb-1">Paket Pro</h3>
+        <p class="text-center text-white line-through text-lg font-semibold">Rp 6,7 Jt</p>
+        <p class="text-center text-white text-4xl font-extrabold mb-6">Rp 3,1 Jt</p>
+        <hr class="border-white/20 mb-6" />
+        <ul class="space-y-3 text-sm text-white/90 flex-1">
+          <li class="flex gap-2"><span class="text-white font-bold">✓</span> Free Domain .sch.id, ponpes.id, dan
+            lembaga pendidikan lainnya</li>
+          <li class="flex gap-2"><span class="text-white font-bold">✓</span> Unlimited Hosting</li>
+          <li class="flex gap-2"><span class="text-white font-bold">✓</span> Free SSL</li>
+          <li class="flex gap-2"><span class="text-white font-bold">✓</span> Unlimited Akun Email</li>
+          <li class="flex gap-2"><span class="text-white font-bold">✓</span> Desain Premium</li>
+          <li class="flex gap-2"><span class="text-white font-bold">✓</span> Integrasi PPDB</li>
+          <li class="flex gap-2"><span class="text-white font-bold">✓</span> Integrasi Medsos</li>
+          <li class="flex gap-2"><span class="text-white font-bold">✓</span> Integrasi Whatsapp</li>
+          <li class="flex gap-2"><span class="text-white font-bold">✓</span> 30 Halaman Website</li>
+          <li class="flex gap-2"><span class="text-white font-bold">✓</span> Google Analytic</li>
+          <li class="flex gap-2"><span class="text-white font-bold">✓</span> Google Search Console</li>
+          <li class="flex gap-2"><span class="text-white font-bold">✓</span> Free 20 Artikel SEO</li>
+          <li class="flex gap-2"><span class="text-white font-bold">✓</span> Backup / 1 Bulan</li>
+          <li class="flex gap-2"><span class="text-white font-bold">✓</span> Estimasi 7 Hari Kerja</li>
+        </ul>
+        <a href="#"
+          class="mt-8 flex items-center justify-center gap-2 bg-yellow-400 hover:bg-yellow-300 transition text-[#292c6d] font-bold text-sm py-3 rounded-full">
+          <span>☎</span> Pesan Sekarang
+        </a>
+      </div>
+
+      <!-- Paket Medium -->
+      <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 flex flex-col">
+        <h3 class="text-center text-xl font-bold text-gray-800 mb-1">Paket Medium</h3>
+        <p class="text-center text-gray-400 line-through text-lg font-semibold">Rp 4,7 Jt</p>
+        <p class="text-center text-[#292c6d] text-4xl font-extrabold mb-6">Rp 2,8 Jt</p>
+        <hr class="border-gray-200 mb-6" />
+        <ul class="space-y-3 text-sm text-gray-600 flex-1">
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> Free Domain .sch.id, ponpes.id, dan
+            lembaga pendidikan lainnya</li>
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> Free Hosting 15 GB</li>
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> Free SSL</li>
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> 20 Akun Email</li>
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> Desain Premium</li>
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> Integrasi dengan PPDB</li>
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> Integrasi Medsos</li>
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> Integrasi Whatsapp</li>
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> 20 Halaman Website</li>
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> Google Analytic</li>
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> Free 10 Artikel SEO</li>
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> Backup / 3 Bulan</li>
+          <li class="flex gap-2"><span class="text-[#292c6d] font-bold">✓</span> Estimasi 5 Hari Kerja</li>
+        </ul>
+        <a href="#"
+          class="mt-8 flex items-center justify-center gap-2 border-2 border-[#292c6d] text-[#292c6d] font-semibold text-sm py-3 rounded-full hover:bg-[#292c6d] hover:text-white transition">
+          Pesan Sekarang
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CUSTOM NEEDS BANNER ========== -->
+  <section class="max-w-6xl mx-auto px-6 md:px-14 pb-20">
+    <div class="bg-[#0e3c96] rounded-3xl p-10 text-center text-white">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">
+        Punya Kebutuhan Diluar Paket di atas?
+      </h2>
+      <p class="text-gray-300 text-sm max-w-2xl mx-auto mb-8 leading-relaxed">
+        Jika anda tidak menemukan informasi yang Anda butuhkan disini, hubungi kami dan akan kami
+        bantu untuk membuat maupun menambahkan fitur sesuai kebutuhan Anda.
+      </p>
+      <a href="#"
+        class="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 transition text-[#292c6d] font-bold text-sm px-10 py-4 rounded-full">
+        <span>☎</span> Hubungi Sekarang
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="max-w-5xl mx-auto px-6 py-20">
+    <h2 class="text-center text-3xl md:text-4xl font-bold text-[#292c6d] mb-12">
+      Pertanyaan yang Sering Ditanyakan
+    </h2>
+    <div class="space-y-3" id="faq-list">
+
+      <div class="faq-item border-b border-gray-200">
+        <button
+          class="faq-toggle w-full flex justify-between items-center px-6 py-5 text-left font-medium text-gray-500 text-lg">
+          Apa Itu Website?
+          <span class="faq-arrow text-gray-500 transition-transform shrink-0 ml-4">▸</span>
+        </button>
+        <div class="faq-content">
+          <p class="px-6 pb-5 text-lg text-gray-500 leading-relaxed">
+            Website adalah media online berisi informasi produk, jasa, layanan atau profil dari perusahaan, sekolah,
+            instansi dan toko online yang bisa diakses menggunakan perangkat yang tersambung dengan koneksi internet
+            seperti laptop, komputer, handphone dan perangkat lainnya.
+            <br><br>
+            Pada umumnya website akan digunakan sebagai media untuk promosi dan jual beli produk, pengenalan jasa atau
+            layanan, pendaftaran dan pengelolaan siswa, sebagai media promosi untuk perusahaan, pusat informasi untuk
+            instansi dan lembaga serta penyebaran informasi atau berita.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-gray-200">
+        <button
+          class="faq-toggle w-full flex justify-between items-center px-6 py-5 text-left font-medium text-gray-500 text-lg">
+          Mengapa Harus Memiliki Website?
+          <span class="faq-arrow text-gray-500 transition-transform shrink-0 ml-4">▸</span>
+        </button>
+        <div class="faq-content">
+          <p class="px-6 pb-5 text-lg text-gray-500 leading-relaxed">
+            Web dapat membantu anda untuk mempromosikan bisnis anda ke calon pembeli dengan tepat sasaran dan tanpa
+            batas, maka percayalah mereka yang tidak memiliki website akan tertinggal oleh zaman.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-gray-200">
+        <button
+          class="faq-toggle w-full flex justify-between items-center px-6 py-5 text-left font-medium text-gray-500 text-lg">
+          Berapa Lama Pengerjaan Pembuatan Website?
+          <span class="faq-arrow text-gray-500 transition-transform shrink-0 ml-4">▸</span>
+        </button>
+        <div class="faq-content">
+          <p class="px-6 pb-5 text-lg text-gray-500 leading-relaxed">
+            Waktu pembuatan website dilakukan dalam 7-14 hari kerja tergantung website yang dibutuhkan. Waktu bisa
+            berubah tergantung kompleksitas maupun konten yang ada pada website.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-gray-200">
+        <button
+          class="faq-toggle w-full flex justify-between items-center px-6 py-5 text-left font-medium text-gray-500 text-lg">
+          Kapan Waktu yang Tepat untuk Membuat Website?
+          <span class="faq-arrow text-gray-500 transition-transform shrink-0 ml-4">▸</span>
+        </button>
+        <div class="faq-content">
+          <p class="px-6 pb-5 text-lg text-gray-500 leading-relaxed">
+            Waktu yang tepat untuk memiliki website adalah saat Anda ingin mengembangkan bisnis dan usaha Anda agar
+            lebih dikenal oleh konsumen luas, serta ingin mempermudah pengelolaan secara menyeluruh lewat satu pintu,
+            atau mengelola pelanggan-pelanggan Anda agar terjalin interaksi 2 arah antara penjual dan pembeli.
+            <br><br>
+            Selain itu dengan adanya pembatasan kegiatan masyarakat yang diterapkan oleh pemerintah saat ini tentunya
+            akan sangat menguntungkan jika Anda memiliki website, karena calon pelanggan Anda tidak perlu repot untuk
+            datang langsung dan bisa berinteraksi menggunakan website.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-gray-200">
+        <button
+          class="faq-toggle w-full flex justify-between items-center px-6 py-5 text-left font-medium text-gray-500 text-lg">
+          Apa Saja yang Perlu Dipersiapkan untuk Membuat Website?
+          <span class="faq-arrow text-gray-500 transition-transform shrink-0 ml-4">▸</span>
+        </button>
+        <div class="faq-content">
+          <p class="px-6 pb-5 text-lg text-gray-500 leading-relaxed">
+            <b>Detail Bisnis:</b> Deskripsi bisnis / perusahaan meliputi produk, layanan, sejarah, visi misi, dll.
+            Alamat & kontak usaha seperti e-mail maupun nomor telepon. Legalitas (untuk pendaftaran domain dengan
+            ekstensi .id)
+            <br><br>
+            <b>Konten untuk ditampilkan di website:</b> Konten visual seperti: foto / ilustrasi produk, video
+            company profile, dsb. Keunggulan layanan / produk dan manfaatnya : Testimoni klien / pelanggan
+            (jika ada).
+            <br><br>
+            <b>Strategi Marketing:</b> Target Market (usia, gender, lokasi). Tujuan mempunyai website (sarana marketing,
+            transaksi, informasi, dsb).
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-gray-200">
+        <button
+          class="faq-toggle w-full flex justify-between items-center px-6 py-5 text-left font-medium text-gray-500 text-lg">
+          Bagaimana Jika Saya Kesulitan dalam Mengelola? Bisa Dibantu?
+          <span class="faq-arrow text-gray-500 transition-transform shrink-0 ml-4">▸</span>
+        </button>
+        <div class="faq-content">
+          <p class="px-6 pb-5 text-lg text-gray-500 leading-relaxed">
+            Tentu bisa, selain kami memberikan tutorial cara pengubahan konten, jika anda merasa tidak mau report dengan
+            pengelolaan website, kami sarankan Anda juga menggunakan layanan website maintenance kami.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-gray-200">
+        <button
+          class="faq-toggle w-full flex justify-between items-center px-6 py-5 text-left font-medium text-gray-500 text-lg">
+          Saya sudah memiliki website sebelumnya, apakah bisa dilanjutkan?
+          <span class="faq-arrow text-gray-500 transition-transform shrink-0 ml-4">▸</span>
+        </button>
+        <div class="faq-content">
+          <p class="px-6 pb-5 text-lg text-gray-500 leading-relaxed">
+            Bisa! kami dapat membantu anda untuk mengembangan web yang sudah ada, namun jika web tersebut menurut kami
+            memiliki terlalu banyak bug, kami akan sarankan untuk membuat web yang jauh lebih baik dari web sebelumnya.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-gray-200">
+        <button
+          class="faq-toggle w-full flex justify-between items-center px-6 py-5 text-left font-medium text-gray-500 text-lg">
+          Bagaimana Jika Saya Butuh Fitur Tambahan?
+          <span class="faq-arrow text-gray-500 transition-transform shrink-0 ml-4">▸</span>
+        </button>
+        <div class="faq-content">
+          <p class="px-6 pb-5 text-lg text-gray-500 leading-relaxed">
+            Fitur tambahan di luar paket dapat didiskusikan. Hubungi kami dan kami akan memberikan
+            penawaran terbaik sesuai kebutuhan Anda.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-gray-200">
+        <button
+          class="faq-toggle w-full flex justify-between items-center px-6 py-5 text-left font-medium text-gray-500 text-lg">
+          Apakah Biaya Di atas Termasuk Pemeliharaan?
+          <span class="faq-arrow text-gray-500 transition-transform shrink-0 ml-4">▸</span>
+        </button>
+        <div class="faq-content">
+          <p class="px-6 text-lg text-gray-500 leading-relaxed">
+            Tim kami dapat menambahkan fitur-fitur diluar paket diatas sesuai dengan kebutuhan, semua fitur tersedia di
+            addons layanan seperti:
+          </p>
+          <ul class="list-disc text-gray-500 ml-10 mt-2 mb-2 text-lg">
+            <li>Fitur Live Chat / WhatsApp</li>
+            <li>E-mail bisnis</li>
+            <li>Halaman / section tambahan</li>
+            <li>Dan berbagai fitur lainnya</li>
+          </ul>
+          <p class="px-6 pb-5 text-lg text-gray-500 leading-relaxed">
+            Jika Anda memiliki kebutuhan website skala enterprise atau dengan berbagai sistem yang kompleks, tim
+            kami
+            akan membuatkan penawaran khusus untuk pembuatan website custom sesuai dengan kebutuhan yang diinginkan.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-gray-200">
+        <button
+          class="faq-toggle w-full flex justify-between items-center px-6 py-5 text-left font-medium text-gray-500 text-lg">
+          Apakah Bisa Membuat Website Sekolah Gratis?
+          <span class="faq-arrow text-gray-500 transition-transform shrink-0 ml-4">▸</span>
+        </button>
+        <div class="faq-content">
+          <p class="px-6 pb-5 text-lg text-gray-500 leading-relaxed">
+            Kita tidak menyediakan layanan gratis, karena ada biaya untuk pembelian domain dan hosting dan membayar tim
+            yang memang memiliki ilmu bukan didapatkan secara gratis. Coba Anda googling apakah pemerintah khususnya
+            kemendikbud menyediakan program tersebut atau tidak.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-gray-200">
+        <button
+          class="faq-toggle w-full flex justify-between items-center px-6 py-5 text-left font-medium text-gray-500 text-lg">
+          Ada layanan lain?
+          <span class="faq-arrow text-gray-500 transition-transform shrink-0 ml-4">▸</span>
+        </button>
+        <div class="faq-content">
+          <p class="px-6 pb-5 text-lg text-gray-500 leading-relaxed">
+            Ya, kami menyediakan layanan lain untuk pembuatan website seperti jasa pembuata website kampus, kursus, dan
+            lain sebagainya.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="text-gray-300 text-sm">
+    <div class="bg-linear-to-b from-[#010040] to-[#002c2f]">
+      <!-- Col 1: about -->
+      <div class="max-w-6xl mx-auto py-16 grid md:grid-cols-4 gap-10">
+        <div>
+          <p class="leading-relaxed">
+            Badoystudio merupakan digital agency yang mempunyai layanan Jasa
+            Pembuatan Website, SEO, dan terkait website lainnya. Kami siap
+            membantu go digital baik itu perusahaan, penjualan, badan, dan
+            lain sebagainya.
+          </p>
+          <ul class="mt-6 space-y-2 text-xs">
+            <li>📞 62895604250236</li>
+            <li>✉️ info@badoystudio.com</li>
+            <li>📍 Perumahan Royal Garden, Rangkasbitung, Lebak- Banten</li>
+          </ul>
+        </div>
+
+        <!-- Col 2 -->
+        <div>
+          <h4 class="font-md text-white mb-4 text-lg tracking-wider">
+            LAYANAN KATEGORI WEB
+          </h4>
+          <ul class="space-y-2 font-light">
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Company Profile</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website Toko
+                Online</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Sekolah</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Landing Page</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Berita</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Pribadi</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Kampus</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Sales Mobil</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Rumah Sakit</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Hotel</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Klinik</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website Agen
+                Travel</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Travel Umroh</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div>
+          <h4 class="font-md text-white mb-4 text-lg tracking-wider">
+            MELAYANI SE INDONESIA
+          </h4>
+          <ul class="space-y-2 font-light">
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Jakarta</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Depok</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Bekasi</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Bogor</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Bandung</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Tangerang</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Surabaya</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Malang</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Yogyakarta</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Semarang</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Medan</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Aceh</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Riau</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Lampung</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Bali</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div>
+          <h4 class="font-md text-white mb-4 text-lg tracking-wider">
+            LAYANAN SEO
+          </h4>
+          <ul class="space-y-2 font-light">
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Jakarta</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Depok</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Bogor</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Bekasi</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Bandung</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Tagerang</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Surabaya</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Semarang</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Solo</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Malang</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Jogja</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Medan</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Sidoarjo</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Makassar</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Palembang</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Aceh</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10 bg-black">
+      <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
+        <p class="text-gray-500">
+          ©2026 - All rights reserved | Jasa Pembuatan Website Profesional
+          &amp; Murah | Badoystudio.com by CV. Zos Management
+        </p>
+      </div>
+  </footer>
+
+  <!-- Fixed WhatsApp CTA -->
+  <a href="#"
+    class="fixed bottom-6 right-6 bg-teal-600 hover:bg-teal-500 transition text-white font-semibold px-6 py-3 rounded-xl shadow-xl flex items-center gap-3 z-50">
+    <svg fill="white" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6">
+      <path
+        d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z" />
+    </svg>
+    <span class="text-sm">Konsultasi Gratis di Sini</span>
+  </a>
+
+  <script>
+    document.querySelectorAll(".faq-toggle").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        btn.parentElement.classList.toggle("open");
+      });
+    });
+
+    document.getElementById("layanan-trigger").addEventListener("mouseenter", () => {
+      document.getElementById("layanan-dropdown").classList.remove("hidden");
+    });
+
+    document.addEventListener("click", () => {
+      document.getElementById("layanan-dropdown").classList.add("hidden");
+    });
+  </script>
+</body>
+
+</html>

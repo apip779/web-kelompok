@@ -1,0 +1,917 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Badoystudio - Jasa Pembuatan Website Profesional, Murah, & Terpercaya
+  </title>
+  <link rel="stylesheet" href="src/output.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .faq-item.open .faq-arrow {
+      transform: rotate(90deg);
+    }
+
+    .faq-item .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .faq-item.open .faq-content {
+      max-height: 500px;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 w-full">
+  <!-- ========== HEADER / HERO ========== -->
+  <header class="bg-[#292c6d] text-white">
+    <!-- Navbar -->
+    <nav
+      class="w-full mx-auto flex items-center justify-between px-6 py-5 bg-linear-to-r from-[#011638] from-80% to-[#002c2f] min-h-[12vh] fixed">
+      <div class="max-w-7xl flex justify-between px-0 md:px-14 items-center mx-auto w-full">
+        <div class="flex items-center gap-2">
+          <img src="gambar/logo_nama.png" alt="" class="h-8 w-auto" />
+        </div>
+        <ul class="hidden md:flex items-center gap-14 text-sm font-medium mr-20">
+          <li>
+            <a href="index.html" class="border-b-2 border-white pb-1">Beranda</a>
+          </li>
+          <li class="relative">
+            <a href="#" id="layanan-trigger" class="hover:text-[#ec265a] transition">Layanan ▾</a>
+            <ul id="layanan-dropdown"
+              class="absolute left-0 top-full mt-2 w-64 bg-white text-gray-800 shadow-xl rounded-sm hidden z-50">
+              <li class="border-b border-gray-100">
+                <a href="index2.html"
+                  class="flex items-center justify-between px-5 py-4 text-sm hover:bg-gray-50 transition">
+                  Jasa Pembuatan Website Sekolah <span class="text-gray-400">›</span>
+                </a>
+              </li>
+              <li class="border-b border-gray-100">
+                <a href="#" class="flex items-center justify-between px-5 py-4 text-sm hover:bg-gray-50 transition">
+                  Jasa SEO <span class="text-gray-400">›</span>
+                </a>
+              </li>
+              <li class="border-b border-gray-100">
+                <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">Jasa Maintenance Website</a>
+              </li>
+              <li class="border-b border-gray-100">
+                <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">Jasa Redesign Website</a>
+              </li>
+              <li class="border-b border-gray-100">
+                <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">Jasa Backup WordPress</a>
+              </li>
+              <li class="border-b border-gray-100">
+                <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">Jasa Pasang SSL</a>
+              </li>
+              <li class="border-b border-gray-100">
+                <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">Jasa Hapus Malware WordPress</a>
+              </li>
+              <li class="border-b border-gray-100">
+                <a href="#" class="flex items-center justify-between px-5 py-4 text-sm hover:bg-gray-50 transition">
+                  Jasa Artikel <span class="text-gray-400">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">Jasa Install Elementor Pro</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#ec265a] transition">Tips</a>
+          </li>
+          <li class="relative">
+            <a href="#" class="hover:text-[#ec265a] transition" id="ebook-trigger">Ebook & Ecourse ▾</a>
+            <ul id="ebook-dropdown"
+              class="absolute left-0 top-full mt-2 w-64 bg-white text-gray-800 shadow-xl rounded-sm hidden z-50">
+              <li class="border-b border-gray-100">
+                <a href="index4.html"
+                  class="flex items-center justify-between px-5 py-4 text-sm hover:bg-gray-50 transition">
+                  Blogging & seo mastery <span class="text-gray-400">›</span>
+                </a>
+              </li>
+              <li class="border-b border-gray-100">
+                <a href="#" class="flex items-center justify-between px-5 py-4 text-sm hover:bg-gray-50 transition">
+                  Kelas Mastering Web <span class="text-gray-400">›</span>
+                </a>
+              </li>
+              <li class="border-b border-gray-100">
+                <a href="#" class="block px-5 py-4 text-sm hover:bg-gray-50 transition">Paket Lengkap Ebook Belajar Studio Android</a>
+              </li>
+          </li>
+        </ul>
+      </div>
+      <button class="md:hidden text-2xl">☰</button>
+    </nav>
+
+    <!-- Hero -->
+    <div
+      class="max-w-7xl mx-auto px-6 md:px-14 py-20 grid md:grid-cols-2 gap-10 items-center min-h-screen bg-[#292c6d]">
+      <div class="mt-12 md:mt-24">
+        <h1 class="text-4xl md:text-5xl font-semibold leading-tight">
+          Jasa Pembuatan<br />
+          Website Profesional,<br />
+          Murah, &amp; Terpercaya
+        </h1>
+        <p class="mt-6 text-sm md:text-base text-gray-200 leading-relaxed">
+          Nikmati website profesional dan murah dari Badoystudio.com! Dengan
+          jasa web dari kami, Anda akan memiliki situs web menarik yang
+          memenuhi kebutuhan bisnis, instansi, ataupun organisasi Anda. Mulai
+          dari web company profile, toko online, sekolah, landing page dan
+          lainnya.
+        </p>
+        <a href="#"
+          class="inline-block mt-8 bg-[#ec265a] hover:bg-[#ec265a]-dark transition text-white font-semibold text-sm px-8 py-3 rounded-full shadow-lg">
+          HUBUNGI KAMI
+        </a>
+      </div>
+      <div class="flex justify-center mt-24">
+        <img src="gambar/gambar_logo.png" alt="gambar-logo" />
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== ALASAN / FEATURES ========== -->
+  <section class="max-w-7xl mx-auto px-6 md:px-14 py-20">
+    <div class="block md:flex gap-28 items-center">
+      <img src="/gambar/why-section.png" alt="kenapa pilih badoystudio" class="max-w-\[450px] w-full" />
+      <div class="min-h-[30vh] w-full">
+        <h2 class="text-4xl md:text-4xl font-semibold text-navy leading-tight max-w-\[600px]">
+          Alasan Kenapa Anda Harus Pakai Jasa Website Dari Badoystudio
+        </h2>
+        <p class="mt-4 text-gray-500 text-sm max-w-\[600px]">
+          Inilah beberapa benefit yang akan Anda dapatkan saat membuat web di
+          Jasa Pembuatan Website Profesional dari kami.
+        </p>
+      </div>
+    </div>
+
+    <!-- Feature cards -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
+      <!-- card template -->
+      <!-- 1 -->
+      <div class="bg-white rounded-2xl shadow-xl transition p-8 text-center mx-auto border border-gray-100">
+        <img src="gambar/icons/blue-lightning.png" alt="speed" class="mx-auto mb-5" />
+        <h3 class="font-semibold text-navy text-xl tracking-normal mb-3">
+          PENGERJAAN CEPAT &amp; PROFESIONAL
+        </h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Tim kami sudah berpengalaman sehingga bisa membuat website dengan
+          cepat dan profesional.
+        </p>
+      </div>
+      <!-- 2 -->
+      <div class="bg-white rounded-2xl shadow-xl transition p-8 text-center border border-gray-100">
+        <img src="gambar/icons/purple-lightning.png" alt="design" class="mx-auto mb-5" />
+        <h3 class="font-semibold text-navy text-xl tracking-normal mb-3">
+          DESAIN WEBSITE YANG MODERN
+        </h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Kami bisa pastikan website Anda akan mempunyai desain yang modern,
+          responsif, dan menarik.
+        </p>
+      </div>
+      <!-- 3 -->
+      <div class="bg-white rounded-2xl shadow-xl transition p-8 text-center border border-gray-100">
+        <img src="gambar/icons/pink-lightning.png" alt="design" class="mx-auto mb-5" />
+        <h3 class="font-semibold text-navy text-xl tracking-normal mb-3">
+          SEO FRIENDLY
+        </h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Apa artinya jika website tidak SEO Friendly. Kami akan membuat
+          website Anda SEO Friendly agar mudah ditemukan di mesin pencari.
+        </p>
+      </div>
+      <!-- 4 -->
+      <div class="bg-white rounded-2xl shadow-xl transition p-8 text-center border border-gray-100">
+        <img src="gambar/icons/purple-lightning.png" alt="design" class="mx-auto mb-5" />
+        <h3 class="font-semibold text-navy text-xl tracking-normal mb-3">
+          KEAMANAN TINGGI
+        </h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Jangan sampai website Anda dibobol orang lain. Makanya kami pastikan
+          website Anda aman.
+        </p>
+      </div>
+      <!-- 5 -->
+      <div class="bg-white rounded-2xl shadow-xl transition p-8 text-center border border-gray-100">
+        <img src="gambar/icons/purple-lightning.png" alt="design" class="mx-auto mb-5" />
+        <h3 class="font-semibold text-navy text-xl tracking-normal mb-3">
+          FREE SUPPORT
+        </h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Kalau Anda memiliki kendala kami akan membantu menyelesaikannya
+          secepat mungkin.
+        </p>
+      </div>
+      <!-- 6 -->
+      <div class="bg-white rounded-2xl shadow-xl transition p-8 text-center border border-gray-100">
+        <img src="gambar/icons/pink-lightning.png" alt="design" class="mx-auto mb-5" />
+        <h3 class="font-semibold text-navy text-xl tracking-normal mb-3">
+          HARGA TERJANGKAU
+        </h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Kami bisa pastikan harga yang tertera sudah benar-benar terjangkau
+          dan sebanding dengan kualitas web yang kami buat.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ALUR ========== -->
+  <section class="bg-[#ec265a] text-white">
+    <div class="max-w-6xl mx-auto px-6 py-20 flex flex-col gap-y-20">
+      <div class="block md:flex items-center justify-between">
+        <div class="max-w-\[500px]">
+          <h2 class="text-3xl md:text-4xl font-semibold leading-tight text-[#fffa95]">
+            Alur Bikin Web Di Jasa Pembuatan Website Badoystudio
+          </h2>
+          <p class="italic text-sm mt-4 text-white/90">
+            Gak perlu bingung harus bagaimana, tinggal ikuti step-step berikut
+            websitemu pasti beres.
+          </p>
+        </div>
+
+        <div class="text-left md:text-center max-w-\[200px] mt-4 md:mt-0">
+          <h4 class="font-semibold tracking-wider text-xl mb-2 text-[#fffa95]">
+            KONSULTASI KEBUTUHAN
+          </h4>
+          <p class="text-sm text-white/90 leading-relaxed">
+            Konsultasikan langsung dengan kami website apa yang ingin Anda
+            buat.
+          </p>
+        </div>
+
+        <div class="text-left md:text-center max-w-62.5 mt-4 md:mt-0">
+          <h4 class="font-semibold tracking-wider text-xl mb-2 text-[#fffa95]">
+            PILIH DOMAIN &amp; DESAIN
+          </h4>
+          <p class="text-sm text-white/90 leading-relaxed">
+            Selanjutnya pilih domain terbaik untuk website Anda. Berikut
+            dengan pilihan desain yang sesuai dengan kategori web Anda.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-y-10 text-left md:text-center">
+        <div class="max-w-87.5">
+          <h4 class="font-semibold tracking-wider text-xl mb-2 text-[#fffa95]">
+            PEMESANAN &amp; PEMBAYARAN
+          </h4>
+          <p class="text-sm text-white/90 leading-relaxed">
+            Jika sudah sepakat dan sesuai dengan kebutuhan, silahkan pilih
+            paket website dan lakukan pembayaran.
+          </p>
+        </div>
+
+        <div class="max-w-87.5 mt-4 md:mt-0">
+          <h4 class="font-semibold tracking-wider text-xl mb-2 text-[#fffa95]">
+            KIRIMKAN DOKUMEN/ KONTEN
+          </h4>
+          <p class="text-sm text-white/90 leading-relaxed">
+            Kirimkan kepada tim kami semua file untuk konten website seperti
+            logo, company profile, dan lainnya.
+          </p>
+        </div>
+
+        <div class="max-w-87.5 mt-4 md:mt-0">
+          <h4 class="font-semibold tracking-wider text-xl mb-2 text-[#fffa95]">
+            PROSES PENGERJAAN &amp; WEBSITE JADI
+          </h4>
+          <p class="text-sm text-white/90 leading-relaxed">
+            Kami akan memproses secepatnya sesuai antrian yang ada, dan
+            selamat setelah itu website Anda sudah rilis.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section class="max-w-6xl mx-auto py-20">
+    <h2 class="text-center text-3xl md:text-4xl font-semibold max-w-5xl mx-auto text-navy">
+      Paket Harga Jasa Pembuatan Web Dari Badoystudio.Com
+    </h2>
+    <p class="text-center text-sm text-gray-500 mt-4 max-w-2xl mx-auto">
+      Buat <a href="#" class="text-cyan-500">website</a> Anda sekarang,
+      sesuaikan dengan budget dan kebutuhan Anda hanya di
+      <a href="#" class="text-cyan-500">badoystudio.com</a>. Pilih paket
+      berikut ini.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-6 mt-12 items-stretch">
+      <!-- Starter -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 flex flex-col">
+        <p class="text-[#ec265a] font-bold text-center tracking-wider text-sm mt-6">
+          PAKET STARTER
+        </p>
+        <p class="text-center mt-6 text-[#ec265a] line-through text-2xl font-bold">
+          4,6 Juta
+        </p>
+        <p class="text-center text-navy text-4xl font-extrabold">2,6 Juta</p>
+        <hr class="my-6 border-gray-200" />
+        <ul class="space-y-3 text-sm text-gray-600 flex-1">
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Free domain .com
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Hosting 5 GB Cloud SSD
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Unlimited Bandwith
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Free SSL
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Fitur Chat
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Integrasi Media Sosial
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Integrasi Google Analytic
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Free Backup / 3 Bulan
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Free Support &amp; Panduan
+          </li>
+        </ul>
+        <a href="#"
+          class="mt-8 flex items-center justify-center gap-2 text-center border-2 border-[#ec265a] text-[#ec265a] font-semibold text-sm py-3 rounded-full hover:bg-[#ec265a] hover:text-white transition">
+          PILIH PAKET
+
+          <svg fill="#EC2D6F" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#EC2D6F"
+            class="w-4">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>whatsapp</title>
+              <path
+                d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z">
+              </path>
+            </g>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Medium (highlight) -->
+      <div class="bg-[#161853] text-white rounded-2xl shadow-2xl p-8 flex flex-col md:-mt-4">
+        <p class="text-[#ec265a] font-bold text-center tracking-wider text-sm mt-6">
+          PAKET MEDIUM
+        </p>
+        <p class="text-center mt-6 text-[#fffa95] line-through text-2xl font-bold">
+          7,6 Juta
+        </p>
+        <p class="text-center text-white text-4xl font-extrabold">5,6 Juta</p>
+        <hr class="my-6 border-white/20" />
+        <ul class="space-y-3 text-sm text-white/90 flex-1">
+          <li class="flex gap-2">
+            <span class="text-white">✓</span> Free domain .com
+          </li>
+          <li class="flex gap-2">
+            <span class="text-white">✓</span> Hosting 12 GB Cloud SSD
+          </li>
+          <li class="flex gap-2">
+            <span class="text-white">✓</span> Unlimited Bandwith
+          </li>
+          <li class="flex gap-2">
+            <span class="text-white">✓</span> Free SSL
+          </li>
+          <li class="flex gap-2">
+            <span class="text-white">✓</span> Fitur Chat
+          </li>
+          <li class="flex gap-2">
+            <span class="text-white">✓</span> Integrasi Media Sosial
+          </li>
+          <li class="flex gap-2">
+            <span class="text-white">✓</span> Integrasi Google Analytic
+          </li>
+          <li class="flex gap-2">
+            <span class="text-white">✓</span> Integrasi Google Search Console
+          </li>
+          <li class="flex gap-2">
+            <span class="text-white">✓</span> Optimasi SEO Dasar
+          </li>
+          <li class="flex gap-2">
+            <span class="text-white">✓</span> Free 15 Artikel SEO (1000 kata)
+          </li>
+          <li class="flex gap-2">
+            <span class="text-white">✓</span> Free Backup Bulanan
+          </li>
+          <li class="flex gap-2">
+            <span class="text-white">✓</span> Free Support &amp; Panduan
+          </li>
+          <li class="flex gap-2">
+            <span class="text-white">✓</span> Free Copywriting
+          </li>
+        </ul>
+        <a href="#"
+          class="mt-8 flex items-center gap-2 justify-center text-center bg-[#ec265a] hover:bg-[#ec265a]-dark transition text-white font-semibold text-sm py-3 rounded-full">
+          PILIH PAKET
+          <svg fill="#ffffff" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"
+            class="w-4">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>whatsapp</title>
+              <path
+                d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z">
+              </path>
+            </g>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Pro -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 flex flex-col">
+        <p class="text-[#ec265a] font-bold text-center tracking-wider text-sm mt-6">
+          PAKET PRO
+        </p>
+        <p class="text-center mt-6 text-[#ec265a] line-through text-2xl font-bold">
+          15,6 Juta
+        </p>
+        <p class="text-center text-navy text-4xl font-extrabold">12,6 Juta</p>
+        <hr class="my-6 border-gray-200" />
+        <ul class="space-y-3 text-sm text-gray-600 flex-1">
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Free domain .com
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Hosting 60 GB Cloud SSD
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Unlimited Bandwith
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Unlimited Email
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Theme Premium
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Integrasi Media Sosial
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Integrasi Google Analytic
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Integrasi Google Search Console
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Optimasi SEO Dasar
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Free 40 Artikel SEO (1000 kata)
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Integrasi Facebook Pixel
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Free Backup Mingguan
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Free Support &amp; Panduan
+          </li>
+          <li class="flex gap-2">
+            <span class="text-navy">✓</span> Free Copywriting
+          </li>
+        </ul>
+        <a href="#"
+          class="mt-8 flex items-center justify-center text-center border-2 border-[#ec265a] text-[#ec265a] font-semibold text-sm py-3 rounded-full hover:bg-[#ec265a] hover:text-white transition gap-2">
+          PILIH PAKET
+
+          <svg fill="#EC2D6F" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#EC2D6F"
+            class="w-4">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>whatsapp</title>
+              <path
+                d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z">
+              </path>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CLIENT LOGOS ========== -->
+  <section class="max-w-6xl mx-auto py-16 text-center">
+    <h2 class="text-3xl md:text-4xl font-semibold text-navy">Client Kami</h2>
+    <p class="text-sm text-gray-500 mt-4">
+      Jadilah seperti mereka yang puas menggunakan jasa dari badoystudio.com.
+    </p>
+    <div class="grid grid-cols-3 md:grid-cols-7 gap-6 mt-10 items-center">
+      <img src="gambar/client/client1.png" alt="" class="h-auto w-20" />
+      <img src="gambar/client/client2.png" alt="" class="h-auto w-20" />
+      <img src="gambar/client/client3.png" alt="" class="h-auto w-20" />
+      <img src="gambar/client/client4.png" alt="" class="h-auto w-20" />
+      <img src="gambar/client/client5.png" alt="" class="h-auto w-20" />
+      <img src="gambar/client/client6.png" alt="" class="h-auto w-20" />
+      <img src="gambar/client/client7.png" alt="" class="h-auto w-20" />
+      <img src="gambar/client/client8.png" alt="" class="h-auto w-20" />
+    </div>
+  </section>
+
+  <!-- ========== PORTFOLIO ========== -->
+  <section class="bg-[#fff1f0] py-20">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-semibold text-navy">
+        Pilihan Desain Web Modern &amp; Profesional
+      </h2>
+      <p class="text-sm text-gray-500 mt-4">
+        Kami bisa pastikan desain web Anda akan modern dan profesional
+      </p>
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12">
+        <img src="gambar/porto/porto1.png" alt="" class="h-auto w-full" />
+        <img src="gambar/porto/porto2.png" alt="" class="h-auto w-full" />
+        <img src="gambar/porto/porto3.png" alt="" class="h-auto w-full" />
+        <img src="gambar/porto/porto4.png" alt="" class="h-auto w-full" />
+        <img src="gambar/porto/porto5.png" alt="" class="h-auto w-full" />
+        <img src="gambar/porto/porto6.png" alt="" class="h-auto w-full" />
+      </div>
+
+      <h3 class="mt-12 text-xl md:text-2xl font-bold text-navy">
+        Pilihan Desain Dan Demo Silahkan Langsung Hubungi Kami Sekarang
+      </h3>
+      <a href="#"
+        class="mt-6 inline-block w-full md:w-full md:px-20 bg-[#ec265a] hover:bg-[#ec265a]-dark transition text-white font-semibold text-sm py-4 rounded-full">
+        PILIH PAKET &amp; MINTA DEMO WEB
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="max-w-3xl mx-auto px-6 py-20">
+    <h2 class="text-center text-3xl md:text-4xl font-semibold text-navy mb-10">
+      Yang Sering Ditanyakan Saat Hendak Membuat Website (FAQ)
+    </h2>
+
+    <div class="space-y-6" id="faq-list">
+      <div class="faq-item bg-white shadow-lg p-2">
+        <button
+          class="faq-toggle w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-md text-black tracking-wider">
+          APA ALASAN PENTING UNTUK SAYA MEMBUAT SEBUAH WEBSITE?
+          <span class="faq-arrow text-black transition-transform">▸</span>
+        </button>
+        <div class="faq-content px-6 text-sm text-gray-600">
+          <p class="pb-4">
+            Sebagian besar penelitian menunjukkan bahwa hard selling sudah
+            terlalu usang sebagai metode promosi. Di era teknologi saat ini,
+            website menjadi salah satu media promosi yang sangat menguntungkan
+            bagi perkembangan bisnis. Selain itu, memiliki toko online jauh
+            lebih hemat daripada memiliki toko offline.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item bg-white shadow-lg">
+        <button
+          class="faq-toggle w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-md text-black tracking-wider">
+          KAPAN SAYA BISA MEMULAI PROSES PEMBUATAN WEBSITE?
+          <span class="faq-arrow text-black transition-transform">▸</span>
+        </button>
+        <div class="faq-content px-6 text-sm text-gray-600">
+          <p class="pb-4">
+            Setelah Anda mengonfirmasi pesanan dan menyelesaikan pembayaran,
+            tim pengembang kami akan segera menghubungi Anda untuk membahas
+            kebutuhan dan preferensi Anda terkait website yang ingin dibuat.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item bg-white shadow-lg">
+        <button
+          class="faq-toggle w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-md text-black tracking-wider">
+          APAKAH SAYA MEMILIKI KEBEBASAN UNTUK MENENTUKAN DESAIN WEBSITE SAYA
+          SENDIRI?
+          <span class="faq-arrow text-black transition-transform">▸</span>
+        </button>
+        <div class="faq-content px-6 text-sm text-gray-600">
+          <p class="pb-4">
+            Silakan konsultasikan keinginan desain website Anda kepada tim
+            profesional kami. Kami juga menyediakan berbagai tema desain
+            website yang dapat Anda pilih untuk merancang website Anda
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item bg-white shadow-lg">
+        <button
+          class="faq-toggle w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-md text-black tracking-wider">
+          BERAPA BIAYA YANG DIPERLUKAN UNTUK JASA PEMBUATAN WEBSITE?
+          <span class="faq-arrow text-black transition-transform">▸</span>
+        </button>
+        <div class="faq-content px-6 text-sm text-gray-600">
+          <p class="pb-4">
+            Di badoystudio.com, harga jasa pembuatan website kami dimulai dari
+            2,5 juta rupiah per tahun.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item bg-white shadow-lg">
+        <button
+          class="faq-toggle w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-md text-black tracking-wider">
+          APA PERSYARATAN YANG DIPERLUKAN UNTUK MEMBUAT SEBUAH WEBSITE?
+          <span class="faq-arrow text-black transition-transform">▸</span>
+        </button>
+        <div class="faq-content px-6 text-sm text-gray-600">
+          <p class="pb-4">
+            Untuk membuat sebuah website, Anda perlu memiliki hosting, domain,
+            konten website, dan kemampuan untuk membuat website.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item bg-white shadow-lg">
+        <button
+          class="faq-toggle w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-md text-black tracking-wider">
+          APA SAJA JENIS-JENIS WEBSITE YANG UMUM DITEMUI?
+          <span class="faq-arrow text-black transition-transform">▸</span>
+        </button>
+        <div class="faq-content px-6 text-sm text-gray-600">
+          <p class="pb-4">
+            Contoh beberapa jenis website meliputi website pribadi, portfolio,
+            profil perusahaan, toko online, website sekolah, media berita, dan
+            lain sebagainya.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item bg-white shadow-lg">
+        <button
+          class="faq-toggle w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-md text-black tracking-wider">
+          APAKAH ADA SUPPORT JIKA TERJADI KENDALA PADA WEBSITE YANG SUDAH
+          JADI?
+          <span class="faq-arrow text-black transition-transform">▸</span>
+        </button>
+        <div class="faq-content px-6 text-sm text-gray-600">
+          <p class="pb-4">
+            Jangan khawatir, tim kami siap siaga, responsif, dan tanggap dalam
+            menangani keluhan dan kendala yang Anda hadapi. Kami dengan senang
+            hati akan membantu Anda dalam mengatasi dan mengelola website
+            Anda.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="text-gray-300 text-sm">
+    <div class="bg-linear-to-b from-[#010040] to-[#002c2f]">
+      <!-- Col 1: about -->
+      <div class="max-w-6xl mx-auto py-16 grid md:grid-cols-4 gap-10">
+        <div>
+          <p class="leading-relaxed">
+            Badoystudio merupakan digital agency yang mempunyai layanan Jasa
+            Pembuatan Website, SEO, dan terkait website lainnya. Kami siap
+            membantu go digital baik itu perusahaan, penjualan, badan, dan
+            lain sebagainya.
+          </p>
+          <ul class="mt-6 space-y-2 text-xs">
+            <li>📞 62895604250236</li>
+            <li>✉️ info@badoystudio.com</li>
+            <li>📍 Perumahan Royal Garden, Rangkasbitung, Lebak- Banten</li>
+          </ul>
+        </div>
+
+        <!-- Col 2 -->
+        <div>
+          <h4 class="font-md text-white mb-4 text-lg tracking-wider">
+            LAYANAN KATEGORI WEB
+          </h4>
+          <ul class="space-y-2 font-light">
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Company Profile</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website Toko
+                Online</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Sekolah</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Landing Page</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Berita</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Pribadi</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Kampus</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Sales Mobil</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Rumah Sakit</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Hotel</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Klinik</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website Agen
+                Travel</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Travel Umroh</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div>
+          <h4 class="font-md text-white mb-4 text-lg tracking-wider">
+            MELAYANI SE INDONESIA
+          </h4>
+          <ul class="space-y-2 font-light">
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Jakarta</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Depok</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Bekasi</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Bogor</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Bandung</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Tangerang</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Surabaya</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Malang</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Yogyakarta</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Semarang</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Medan</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Aceh</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Riau</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Lampung</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa Pembuatan Website
+                Bali</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div>
+          <h4 class="font-md text-white mb-4 text-lg tracking-wider">
+            LAYANAN SEO
+          </h4>
+          <ul class="space-y-2 font-light">
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Jakarta</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Depok</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Bogor</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Bekasi</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Bandung</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Tagerang</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Surabaya</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Semarang</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Solo</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Malang</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Jogja</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Medan</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Sidoarjo</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Makassar</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Palembang</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-100 hover:underline text-gray-500 text-md">Jasa SEO Aceh</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fixed WhatsApp CTA -->
+    <a href="#"
+      class="fixed bottom-6 right-6 bg-teal-600 hover:bg-teal-500 transition text-white font-semibold px-6 py-3 rounded-xl shadow-xl flex items-center gap-3 z-50">
+      <svg fill="white" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6">
+        <path
+          d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z" />
+      </svg>
+      <span class="text-sm">Konsultasi Gratis di Sini</span>
+    </a>
+
+    <script>
+      document.querySelectorAll(".faq-toggle").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          btn.parentElement.classList.toggle("open");
+        });
+      });
+
+      document.getElementById("layanan-trigger").addEventListener("mouseenter", () => {
+        document.getElementById("layanan-dropdown").classList.remove("hidden");
+      });
+
+      document.addEventListener("click", () => {
+        document.getElementById("layanan-dropdown").classList.add("hidden");
+      });
+
+      document.getElementById("ebook-trigger").addEventListener("mouseenter", () => {
+        document.getElementById("ebook-dropdown").classList.remove("hidden");
+      });
+
+      document.addEventListener("click", () => {
+        document.getElementById("ebook-dropdown").classList.add("hidden");
+      });
+    </script>
+</body>
+
+</html>
