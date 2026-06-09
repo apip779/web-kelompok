@@ -744,6 +744,9 @@
   .bg-\[\#161853\] {
     background-color: #161853;
   }
+  .bg-\[\#415456\] {
+    background-color: #415456;
+  }
   .bg-\[\#b2ede0\] {
     background-color: #b2ede0;
   }
@@ -761,6 +764,9 @@
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
+  }
+  .bg-gray-400 {
+    background-color: var(--color-gray-400);
   }
   .bg-teal-600 {
     background-color: var(--color-teal-600);
@@ -1171,6 +1177,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: #ec265a;
+      }
+    }
+  }
+  .hover\:bg-blue-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-500);
       }
     }
   }
